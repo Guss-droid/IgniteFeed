@@ -4,7 +4,12 @@ import { Avatar } from "../Avatar"
 
 import styles from "./styles.module.css"
 
-export function Comment({ content, removeComment }) {
+interface IComment {
+  content: string;
+  removeComment: (comment: string) => void;
+}
+
+export function Comment({ content, removeComment }: IComment) {
 
   const [likeCount, setLikeCount] = useState(0)
 
