@@ -1,6 +1,11 @@
 import styles from "./styles.module.css"
 
-export function Avatar({src, hasBorder = true }) {
+interface IAvatar {
+  src: string;
+  hasBorder?: boolean;
+}
+
+export function Avatar({ src, hasBorder = true }: IAvatar) {
   return (
     <img
       src={src}
