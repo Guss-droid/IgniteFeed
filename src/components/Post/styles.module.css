@@ -64,14 +64,6 @@
   line-height: 1.6;
 }
 
-.avatar {
-  width: calc(3rem + 12px);
-  height: calc(3rem + 12px);
-  border-radius: 8px;
-  border: 4px solid var(--gray-800);
-  outline: 2px solid var(--green-500);
-}
-
 .comments {
   width: 100%;
   margin-top: 1.5rem;
@@ -121,4 +113,8 @@
 .comments:focus-within footer {
   visibility: visible;
   max-height: none;
+}
+
+.commentsList {
+  margin-top: 2rem;
 }
